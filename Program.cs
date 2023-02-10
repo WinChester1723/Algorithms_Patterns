@@ -1,6 +1,7 @@
 ﻿using Algorithms_Patterns.Patterns.Generative_Patterns.AbstractFactory;
 using Algorithms_Patterns.Patterns.Generative_Patterns.Builder;
 using Algorithms_Patterns.Patterns.Generative_Patterns.Conceptual;
+using Algorithms_Patterns.Patterns.Generative_Patterns.Singleton;
 
 namespace Algorithms_Patterns
 {
@@ -73,6 +74,22 @@ namespace Algorithms_Patterns
             //Console.WriteLine("   p3 instance values (everything was kept the same):");
             //Display.DisplayValues(p3);
 
+
+            #endregion
+
+            #region Singleton
+
+            Singleton s1 = new Singleton();
+            Singleton s2 = new Singleton();
+
+            if (s1 == s2)
+            {
+                Console.WriteLine("Singleton works, both variables contain the same instance.");
+            }
+            else
+            {
+                Console.WriteLine("Singleton failed, variables contain different instances.");
+            }
 
             #endregion
 
