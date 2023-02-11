@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Algorithms\" />
     <Folder Include="Patterns\Behavuiral Patterns\" />
-    <Folder Include="Patterns\Structural Patterns\" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,9 @@
 using Algorithms_Patterns.Patterns.Generative_Patterns.Builder;
 using Algorithms_Patterns.Patterns.Generative_Patterns.Conceptual;
 using Algorithms_Patterns.Patterns.Generative_Patterns.Singleton;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Adapter;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Bridge;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Composite;
 
 namespace Algorithms_Patterns
 {
@@ -79,17 +82,68 @@ namespace Algorithms_Patterns
 
             #region Singleton
 
-            Singleton s1 = new Singleton();
-            Singleton s2 = new Singleton();
+            //Singleton s1 = new Singleton();
+            //Singleton s2 = new Singleton();
 
-            if (s1 == s2)
-            {
-                Console.WriteLine("Singleton works, both variables contain the same instance.");
-            }
-            else
-            {
-                Console.WriteLine("Singleton failed, variables contain different instances.");
-            }
+            //if (s1 == s2)
+            //{
+            //    Console.WriteLine("Singleton works, both variables contain the same instance.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Singleton failed, variables contain different instances.");
+            //}
+
+            #endregion
+
+            #region Adapter
+
+            //Adaptee adaptee = new Adaptee();
+            //ITarget target = new Adapter(adaptee);
+
+            //Console.WriteLine("Adaptee interface is incompatible with the client.");
+            //Console.WriteLine("But with adapter client can call it's method.");
+
+            //Console.WriteLine(target.GetRequest());
+
+            #endregion
+
+            #region Bridge
+
+            //Clients clients = new Clients();
+
+            //Abstraction abstraction;
+            //abstraction = new Abstraction(new ConcreteImplementationA());
+            //clients.CLienCode(abstraction);
+
+            //Console.WriteLine();
+
+            //abstraction = new ExtendedAbstration(new ConcreteImplementationB());
+            //clients.CLienCode(abstraction);
+
+            #endregion
+
+            #region Composite
+
+            //ClientComposite client = new ClientComposite();
+
+            //Leaf leaf = new Leaf();
+            //Console.WriteLine("Client: I get a simple component:");
+            //client.ClientCode(leaf);
+
+            //Composite tree = new Composite();
+            //Composite branch1 = new Composite();
+            //branch1.Add(new Leaf());
+            //branch1.Add(new Leaf());
+            //Composite branch2 = new Composite();
+            //branch2.Add(new Leaf());
+            //tree.Add(branch1);
+            //tree.Add(branch2);
+            //Console.WriteLine("Client: Now I've got a composite tree:");
+            //client.ClientCode(tree);
+
+            //Console.Write("Client: I don't need to check the components classes even when managing the tree:\n");
+            //client.ClientCode2(tree, leaf);
 
             #endregion
 
