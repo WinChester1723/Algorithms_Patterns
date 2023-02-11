@@ -5,6 +5,8 @@ using Algorithms_Patterns.Patterns.Generative_Patterns.Singleton;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Adapter;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Bridge;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Composite;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Decorator;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Facade;
 
 namespace Algorithms_Patterns
 {
@@ -144,6 +146,31 @@ namespace Algorithms_Patterns
 
             //Console.Write("Client: I don't need to check the components classes even when managing the tree:\n");
             //client.ClientCode2(tree, leaf);
+
+            #endregion
+
+            #region Decorator
+
+            //ClientDecorator client = new ClientDecorator();
+
+            //var simple = new ConcreteComponentDecorator(); 
+            //Console.WriteLine("Client: I get a simple component:");
+            //client.ClientCode(simple);
+            //Console.WriteLine();
+
+            //ConcreteDecoratorA decorator1 = new ConcreteDecoratorA(simple);
+            //ConcreteDecoratorB decorator2 = new ConcreteDecoratorB(decorator1);
+            //Console.WriteLine("Client: Now I've got a decorated component:");
+            //client.ClientCode(decorator2);
+
+            #endregion
+
+            #region Facade
+
+            //Subsystem1 subsystem1 = new Subsystem1();
+            //Subsystem2 subsystem2 = new Subsystem2();
+            //Facade facade = new Facade(subsystem1, subsystem2);
+            //ClientFacade.ClientCode(facade);
 
             #endregion
 
