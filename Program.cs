@@ -7,6 +7,7 @@ using Algorithms_Patterns.Patterns.Structural_Patterns.Bridge;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Composite;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Decorator;
 using Algorithms_Patterns.Patterns.Structural_Patterns.Facade;
+using Algorithms_Patterns.Patterns.Structural_Patterns.Proxy;
 
 namespace Algorithms_Patterns
 {
@@ -171,6 +172,22 @@ namespace Algorithms_Patterns
             //Subsystem2 subsystem2 = new Subsystem2();
             //Facade facade = new Facade(subsystem1, subsystem2);
             //ClientFacade.ClientCode(facade);
+
+            #endregion
+
+            #region Proxy
+
+            ClientProxy client = new ClientProxy();
+
+            Console.WriteLine("Client: Executing the client code with a real subject:");
+            RealSubject subject = new RealSubject();
+            client.ClientCode(subject);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Client: Executing the same client code with a proxy:");
+            Proxy proxy = new Proxy(subject);
+            client.ClientCode(proxy);
 
             #endregion
 
